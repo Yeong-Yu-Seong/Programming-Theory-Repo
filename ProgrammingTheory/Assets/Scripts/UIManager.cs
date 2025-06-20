@@ -6,7 +6,7 @@ public class UIManager : MonoBehaviour
     public Canvas gameUI;
     public void StartGame()
     {
-        startMenuUI.enabled = false; // Disable the UI
-        gameUI.enabled = true; // Enable the game UI
+        startMenuUI.gameObject.SetActive(false);
+        gameUI.gameObject.SetActive(true);
     }
 }
